@@ -1,2 +1,2 @@
-# 03-Text-adventure
-My text adventure game
+This is a text adventure game where you wake up in a pit and don't remember anything. If you choose to do so, you can walk into a dungeon, where there are
+giant rats, deadly pits, skeletons and loads of treasure. Fight your way through the dungeon and either end up in the treasure room or walk willingly to your death.

@@ -1,0 +1,140 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "EAST",    "map": "EAST"  },
+      { "v": "E",       "map": "EAST"  },
+      { "v": "WEST",    "map": "WEST"  },
+      { "v": "W",       "map": "WEST"  }
+    ],
+
+    "rooms": {
+      "START": {
+        "name": "PIT",
+        "desc": "You wake up in a dark pit, not remembering how you got in it. You see light above you, but there is no possible way to get out that way. Other than that, there is a room to the north.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "HALLWAY",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HALLWAY": {
+        "name": "Hallway",
+        "desc": "You exit the pit. It seems to be a the entrance. There are slightly open dungeon doors to the north.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "DUNGEON",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "START",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }, 
+    "DUNGEON": {
+      "name": "DUNGEON",
+      "desc": "You swing the doors open to see a bare room made of stone. The door slams shut behind you, locked. There are doors to the east, west, and north. The west room smells like a feast, the north smells like death, and the east smells like cheese.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "DEATH ROOM HALLWAY",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "CHEESY HALLWAY",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "TREASURE HALLWAY",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+  "DEATH ROOM HALLWAY": {
+    "name": "Death Smell Room",
+    "desc": "You walk to the northern room. To the north of you, you see a giant pit with spikes at the bottom with a sign that says 'DEATH AHEAD'.",
+    "exits": [
+      {
+        "verb": "NORTH",
+        "target": "DEATH",
+        "condition": ""
+      },
+      {
+        "verb": "SOUTH",
+        "target": "START",
+        "condition": ""
+      }
+    ],
+    "inventory": []
+  },
+  "DEATH": {
+    "name": "Death",
+    "desc": "You walk off the edge and now you are dead in the pit. All you have now is my narration. Which is ending now.",
+    "exits": [
+    ],
+    "inventory": []
+  },
+"CHEESY HALLWAY": {
+  "name": "Cheesy Smell Hallway",
+  "desc": "The smell of cheese gets stronger. You see a trail of cheese and giant footprints to the east. You can go back west or follow the cheese.",
+  "exits": [
+    {
+      "verb": "EAST",
+      "target": "CHEESE",
+      "condition": ""
+    },
+    {
+      "verb": "WEST",
+      "target": "DUNGEON",
+      "condition": ""
+    }
+  ],
+  "inventory": []
+  },
+  "CHEESE": {
+    "name": "Rat King",
+    "desc": "You keep following the smell of cheese right into the mouth of a giant rat. This is the end for you.",
+    "exits": [
+    ],
+    "inventory": []
+    },
+  "TREASURE HALLWAY": {
+    "name": "Treasure Hallway",
+    "desc": "To the north, you see another room, but there are two skeletons guarding the entrance. You can go there or back east.",
+    "exits": [
+      {
+        "verb": "NORTH",
+        "target": "TREASURE",
+        "condition": ""
+      },
+      {
+        "verb": "EAST",
+        "target": "DUNGEON",
+        "condition": ""
+      }
+    ],
+    "inventory": []
+  },
+  "TREASURE": {
+    "name": "Treasure",
+    "desc": "You use your vast and sudden knowledge of martial arts to dismember the skeletons. You walk into the northern room and see piles of treasure. However you have no way out, so you are stuck down here with treasure.",
+    "exits": [
+    ],
+    "inventory": []
+  }
+}
+}
