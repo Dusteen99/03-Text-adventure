@@ -1,0 +1,50 @@
+Name: Caden Mockler
+Date: 9/28
+Project: Text Adventure
+Peer's repository: https://github.com/Dusteen99/03-Text-adventure
+
+
+What is something you learned by reviewing your peer's project?
+
+    Objectives and options are easier to understand in simple short texts.
+
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+    A running game engine, less complicated narrative.
+
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+
+    Have an objective or goal rather than just ending in death and a route to restart, as well as maybe more options for replayability.
+ 
+
+What could have been clearer or better commented?
+
+    When the game has actually ended.
+
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+
+    No, it was all pretty stritforward.
+
+ 
+
+Does the repository contain an appropriate LICENSE?
+
+    Yes
+
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+    Not really, maybe add something on the code itself.
+
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+    Functions well and is easy to understand!
